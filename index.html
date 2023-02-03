@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>STREAK COUNTER</title>
+</head>
+
+<body>
+
+    <div class="content">
+
+        <div id="home">
+            <button type="submit" id="adds"> <h5>+ </h5> </button>
+            <img src="./demo2-with-watch.png" alt="photo unavailable" style="width: 200px; height: 400px;">
+            <h3>Welcome to my streak counter</h3>
+        <div id="showup" ></div>
+        </div>
+
+        <div id="form">
+            <button type="reset" id="resets"> <h5>X</h5></button>
+            <!-- <button>Add a Todo Here</button> -->
+
+            <div id="err">
+                <h4>Please Add a Task</h4>
+                <form id="form1" action="">
+                    <label for="title"> Taskname</label>
+                    <input type="text" id="title" name="Title">
+                    <label for="image">Task Image</label>
+                    <input type="img" id="image" name="Image">
+                    <label for="date">Start Date</label>
+                    <input type="date" id="date" name="Date">
+                    <br>
+
+                    <button type="submit" id="addts">Add Task</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="dispOne">
+
+        </div>
+
+        <div id="display">
+            <h5 id="pp">You don't have any activity</h5>
+            <h2 id="pr" style="display: none;">Activities!! </h2>
+
+        </div>
+
+    </div>
+
+    <script> 
+        var exports={};
+        </script>
+    <script src="./dist/app.js"></script>
+    
+</body>
+
+</html>
