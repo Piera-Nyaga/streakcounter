@@ -50,16 +50,9 @@ class HighestStreaks {
       return bestTask;
     }
   }
-// class HighestStreaks {
-//     static highestStreaks(streakArr: number[]) {
-//         const maxStreak: number = Math.max(...streakArr);
-//         return maxStreak;
-//     }
-// }
 
 Form.style.display = 'none'
 displayOne.style.display = "none"
-// Info.style.display='none'
 pr.style.display='block'
 
 btnAdd.addEventListener('click', e => {
@@ -209,7 +202,7 @@ function showBest(){
           const taskbest: Todo = bestStreak
           let html = `
         <div class="task" style ="display:flex;flex-direction:column;gap:5px; margin-left:50px;" onclick="popTask(${taskbest.id})" >                      
-              <h3>Congratulations bbg!!! this is your best streak ever</h3>
+              <h3>Your best streak is:</h3>
         <img src="${bestStreak.Image}" style="width:98%;height:100px">
                 <p>${bestStreak.date}</p>  
                 <p>${bestStreak.Title}</p>   
